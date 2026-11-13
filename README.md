@@ -18,7 +18,7 @@ To setup the Raspberry Pi, load MicroPython from https://micropython.org/downloa
 
 Once loaded, put the `main.py` and `secrets.py` into the MicroPython environment.
 
-You will need to update the `secrets.py` file with your WiFi details, your GitHub token, and the path to the repo where the `.json` is stored.
+You will need to update the `secrets.py` file with your WiFi details, your GitHub token, the path to the repo where the `.json` is stored, and a station name and latitude/longitude for your device.
 
 # Mechanical Build
 
@@ -41,7 +41,7 @@ The PCB is a simple double-sided board. The Gerbers are in the relevant folder a
 
 # BIST (Built in self test)
 
-As it is largely impractical to set off a weapon to test the device is functionality the BIST pin of the HSN-1000L can be asserted to trigger the NED pin and confirm the device is working OK.
+As it is largely impractical to set off a weapon to test the device's functionality the BIST pin of the HSN-1000L can be asserted to trigger the NED pin and confirm the device is working OK.
 
 The SW1 switch triggers this functionality, on successful test the BIST button illuminates green
 
